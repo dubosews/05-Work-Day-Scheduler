@@ -1,0 +1,157 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+  border-style: solid;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.time-block{
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd7700;
+  color: white;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.timeBlk1, .timeBlk2, .timeBlk3, .timeBlk4, .timeBlk5, .timeBlk6,
+.timeBlk7, .timeBlk8, .timeBlk9, .timeBlk10, .timeBlk11, .timeBlk12,
+.timeBlk13, .timeBlk14, .timeBlk15, .timeBlk16, .timeBlk17, .timeBlk18,
+.timeBlk19, .timeBlk20, .timeBlk21, .timeBlk22, .timeBlk23, .timeBlk24  {
+  width: 80%;
+  justify-content: space-between;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+
+.tBtime {
+  background-color: #00000085;
+  border-radius: 20px;
+  text-align: center;
+  color:rgb(255, 255, 255);
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+}
+
+.tBevent {
+  justify-content: center;
+}
+
+.saveBtn {
+  background-color: #5df4ffe8;
+  color: #3aff7c;
+  width: 100px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-width: 0px;
+  border-color: rgba(219, 242, 255, 0.878);
+  margin-right: -2px;
+  padding: 10px;
+}
+
+.tBsave {
+  justify-content: right;
+  background-color: #ffd13a;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.tBsave:hover {
+  background-color: #e3ffec;
+  color: #ffffff;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.showBtn {
+  background-color: #ffffff;
+  color: #85f8abda;
+  width: 350px;
+  height: 75px;
+  border-radius: 20px;
+  border-width: 1px;
+  border-color: #75ffa3;
+  border-style: solid;
+  margin-top: 50px;
+  margin-bottom: -50px;
+  padding: 10px;
+  font-size: 18pt;
+}
+
+.showBtn:hover {
+  background-color: #85f8abda;
+  color: #ffffff;
+}
+
+.saveIcon {
+  height: 45%;
+  width: 75%;
+}
+
+
+input[type=text], select {
+  width: 400px;
+  padding: 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.836);
+}

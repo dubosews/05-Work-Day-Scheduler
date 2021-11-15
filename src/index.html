@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="data/css/style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3">Work Day Scheduler</h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <p><button class="showBtn" onclick="showEvents()">Show Current Events</button></p>
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="container">
+
+      <!-- Timeblocks go here -->
+
+        <div class="timeBlk1" id="timeBlk1">
+          <div class="tBtime">
+            <span>
+              12:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event1" id="event1">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn1" onclick="save1()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+
+        <div class="timeBlk2" id="timeBlk2">
+          <div class="tBtime">
+            <span>
+              01:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event2" id="event2">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn2" onclick="save2()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+
+        <div class="timeBlk3" id="timeBlk3">
+          <div class="tBtime">
+            <span>
+              02:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event3" id="event3">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn3" onclick="save3()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk4" id="timeBlk4">
+          <div class="tBtime">
+            <span>
+              03:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event4" id="event4">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn4" onclick="save4()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk5" id="timeBlk5">
+          <div class="tBtime">
+            <span>
+              04:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event5" id="event5">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn5" onclick="save5()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+
+        <div class="timeBlk6" id="timeBlk6">
+          <div class="tBtime">
+            <span>
+              05:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event6" id="event6">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn6" onclick="save6()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+
+        <div class="timeBlk7" id="timeBlk7">
+          <div class="tBtime">
+            <span>
+              06:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event7" id="event7">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn7" onclick="save7()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+
+        <div class="timeBlk8" id="timeBlk8">
+          <div class="tBtime">
+            <span>
+              07:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event8" id="event8">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn8" onclick="save8()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk9" id="timeBlk9">
+          <div class="tBtime">
+            <span>
+              08:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event9" id="event9">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn9" onclick="save9()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk10" id="timeBlk10">
+          <div class="tBtime">
+            <span>
+              09:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event10" id="event10">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn10" onclick="save10()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk11" id="timeBlk11">
+          <div class="tBtime">
+            <span>
+              10:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event11" id="event11">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn11" onclick="save11()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk12" id="timeBlk12">
+          <div class="tBtime">
+            <span>
+              11:00 am
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event12" id="event12">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn12" onclick="save12()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk13" id="timeBlk13">
+          <div class="tBtime">
+            <span>
+              12:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event13" id="event13">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn13" onclick="save13()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+
+        <div class="timeBlk14" id="timeBlk14">
+          <div class="tBtime">
+            <span>
+              01:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event14" id="event14">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn14" onclick="save14()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+
+        <div class="timeBlk15" id="timeBlk15">
+          <div class="tBtime">
+            <span>
+              02:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event15" id="event15">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn15" onclick="save15()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk16" id="timeBlk16">
+          <div class="tBtime">
+            <span>
+              03:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event16" id="event16">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn16" onclick="save16()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk17" id="timeBlk17">
+          <div class="tBtime">
+            <span>
+              04:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event17" id="event17">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn17" onclick="save17()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+
+        <div class="timeBlk18" id="timeBlk18">
+          <div class="tBtime">
+            <span>
+              05:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event18" id="event18">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn18" onclick="save18()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+
+        <div class="timeBlk19" id="timeBlk19">
+          <div class="tBtime">
+            <span>
+              06:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event19" id="event19">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn19" onclick="save19()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+
+        <div class="timeBlk20" id="timeBlk20">
+          <div class="tBtime">
+            <span>
+              07:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event20" id="event20">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn20" onclick="save20()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk21" id="timeBlk21">
+          <div class="tBtime">
+            <span>
+              08:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event21" id="event21">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn21" onclick="save21()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk22" id="timeBlk22">
+          <div class="tBtime">
+            <span>
+              09:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event22" id="event22">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn22" onclick="save22()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk23" id="timeBlk23">
+          <div class="tBtime">
+            <span>
+              10:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event23" id="event23">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn23" onclick="save23()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        <div class="timeBlk24" id="timeBlk24">
+          <div class="tBtime">
+            <span>
+              11:00 pm
+            </span>
+          </div>
+          <div class="tBevent">
+            <center>
+              <span>
+                <input type="text" name="event24" id="event24">
+              </span>
+            </center>
+          </div>              
+          <div class="tBsave">
+            <button class="saveBtn" id="svBtn24" onclick="save24()">
+              <img src="data/media/save_icon.svg" alt="save icon" class="saveIcon">
+            </button>                      
+          </div>
+        </div>
+        
+
+      </div>
+     
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="data/js/index.js"></script>
+  </body>
+</html>
